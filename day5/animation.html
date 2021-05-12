@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #login{
+            background-color: blueviolet;
+            color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100px;
+            text-transform: uppercase;
+            height: 50px;
+            transition: border-radius 1s;
+        }
+
+        #login:hover{
+            border-radius: 25px;
+            background-color: cadetblue;
+            
+        }
+    /* pseudo element*/
+    #description::first-letter{
+        font-size: 50px;
+    }
+    #description::selection{
+        background-color: yellow;
+    }
+    #description::before{
+        content: "mo ta";
+    }
+    #description::after{
+        content: "::->";
+        color: violet;
+    }
+    #apple{
+        text-align: center;
+        font-size: 60px;
+        animation: change-size 2s infinite;
+    }
+    @keyframes change-size{
+        from {
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.8);
+        }
+        
+    }
+    @keyframes rotate{
+        10% {
+            transform: rotate(15deg);
+        }
+        40%{
+            transform: rotate(45deg);
+        }
+        60%{
+            transform: rotate(65deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    #heart{
+        animation: nhipdap 1s infinite;
+        text-align: center;
+        font-size: 50px;
+
+    }
+    @keyframes nhipdap {
+        20% {
+            transform: scale(1.2);
+        }
+        40%{
+            transform: scale(1.5);
+
+        }
+        30% {
+            transform: scale(1.8);
+        }
+        50%{
+            transform: scale(2);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="login">login</div>
+    <!--pseudo element-->
+    <p id="description">
+        asndjanflansnasfknaklsfnaksnfnaskfn
+    </p>
+    <!--animation-->
+    <p id="apple"> 🍎 </p>
+    <p id="heart">💗</p>
+</body>
+</html>
