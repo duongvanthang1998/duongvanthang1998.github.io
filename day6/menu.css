@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#tongthe{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   margin: auto;
+}
+.anh{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#tongthe img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+}
+img:hover{
+    transform: scale(1.2);
+}
+h1{
+    justify-content: center;
+}
