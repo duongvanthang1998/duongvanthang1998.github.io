@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 90px;
+    background-color: #2f5d7b;
+}
+.header__navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+.header__navbar-list{
+    list-style-type: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-left: 130px;
+    margin-top: 20px;
+
+}
+.header__navbar-item-link{
+    text-decoration: none;
+    color:#fff;
+}
+.header__navbar-item{
+    font-size: 25px;
+    margin-right: 90px;
+}
+.avatar{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    object-fit:cover;
+    justify-content: center;
+    }
+.submenu{
+    position: absolute;
+    padding-top: 200px;
+    display: none;
+    list-style-type: none;
+    
+}
+.submenu-item{
+    text-decoration: none;
+    
+}
+.submenu li{
+    background-color:rgba(98, 126, 218, 0.7);
+    padding: 5px 10px 5px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.avatar:hover .submenu{
+    display: block;
+}
+.bodynoidung{
+   background-color: rgba(31, 58, 148, 0.7);
+   display: flex;
+   justify-content: space-between;
+   line-height: 24px;
+}
+.chu__lon{
+    font-size: 70px;
+    font-weight: 600;
+    color:#63CDF3;
+    padding: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.chu__nho{
+    color:#63CDF3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.bodynoidung__anh img{
+    height: 260px;
+    width: 280px;
+}
+.bodynoidung__thu2{
+    background-color: rgba(31, 58, 148, 0.7);
+}
+table{
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+table th{
+    color: white;
+    border: 1px solid #63CDF3;
+}
+table td{
+    color: white;
+    border: 1px solid #63CDF3;
+    text-align: center;
+}  
